@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shafaq Naaz - Fan Site</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <video autoplay muted loop id="bgVideo">
+    <source src="assets/video/intro.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="overlay">
+    <header>
+      <h1>Welcome to Shafaq Naaz Universe 🌟</h1>
+      <button onclick="toggleMode()" class="neon-btn">🌓 Toggle Mode</button>
+    </header>
+
+    <nav>
+      <a href="about.html" class="neon-btn">About</a>
+      <a href="instagram.html" class="neon-btn">Instagram Dailies</a>
+      <a href="#shows" class="neon-btn">TV Shows</a>
+      <a href="#quotes" class="neon-btn">Quotes</a>
+    </nav>
+
+    <section id="news">
+      <h2>📰 Latest News About Shafaq Naaz</h2>
+      <div id="newsContainer">Loading news...</div>
+    </section>
+
+    <section id="shows">
+      <h2>📺 TV Shows</h2>
+      <table>
+        <tr><th>Year</th><th>Show</th><th>Role</th></tr>
+        <tr><td>2013</td><td>Mahabharat</td><td>Kunti</td></tr>
+        <tr><td>2016</td><td>Chidiya Ghar</td><td>Mayuri</td></tr>
+        <tr><td>2019</td><td>Devi Adi Parashakti</td><td>Devi Kaali</td></tr>
+        <tr><td>2022</td><td>Ghum Hai Kisikey Pyaar Meiin</td><td>Dr. Shruti</td></tr>
+      </table>
+    </section>
+
+    <section id="quotes">
+      <h2>✨ Quotes by Shafaq</h2>
+      <blockquote>"Ignorance is the bliss."</blockquote>
+      <blockquote>“There’s something deeply sad about souls who keep shouting into the world, hoping it’ll fix what’s broken within. I pray they find peace not noise, not attention, but actual peace.” 🫶🏻</blockquote>
+    </section>
+  </div>
+
+  <div id="chatbot" class="chatbox">
+    <div id="chatlog"></div>
+    <input type="text" id="userInput" placeholder="Talk to the bot..." onkeydown="handleKey(event)" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
